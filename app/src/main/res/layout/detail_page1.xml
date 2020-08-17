@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCDE84"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="츄밥"
+            android:fontFamily="@font/hoonwhitecatr"
+            android:textColor="#ffffff"
+            android:textSize="60dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back"/>
+
+
+    </FrameLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="546dp"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            // 컵사이즈별 가격
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/custom_round_corner_shape"
+                android:textColor="#ffffff">
+
+                <ImageView
+                    android:id="@+id/regularSize"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/cupsize1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/hoonwhitecatr"
+                    android:text="레귤러\n2000원"
+                    android:layout_marginLeft="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/regularSize"
+                    android:textSize="35dp"/>
+
+                <ImageView
+                    android:id="@+id/bigSizeCup"
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/cupsize"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/hoonwhitecatr"
+                    android:text="  빅츄\n2500원"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/bigSizeCup"
+                    android:textSize="35dp"/>
+
+                <ImageView
+                    android:id="@+id/superDoubleBig"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/cupsize2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/hoonwhitecatr"
+                    android:text="슈퍼더블빅\n 3500원"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@+id/superDoubleBig"
+                    android:textSize="35dp"/>
+
+            </RelativeLayout>
+
+            // 참치마요 츄밥
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/custom_round_corner_shape"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/choobab3"
+                    android:padding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&quot;참치마요 츄밥&quot;"
+                    android:textSize="40dp"
+                    android:padding="8dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/hoonwhitecatr"
+                    />
+
+
+            </LinearLayout>
+
+            // 치3 츄밥
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/custom_round_corner_shape"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/choobab4"
+                    android:padding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&quot;치3 츄밥&quot;\n날치알+김치볶음+참치마요"
+                    android:textSize="40dp"
+                    android:padding="8dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/hoonwhitecatr"
+                    />
+
+
+            </LinearLayout>
+
+            // 곱창 츄밥
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/custom_round_corner_shape"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/choobab5"
+                    android:padding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&quot;곱창 츄밥&quot;"
+                    android:textSize="40dp"
+                    android:padding="8dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/hoonwhitecatr"
+                    />
+
+
+            </LinearLayout>
+
+            // 제육볶음 츄밥
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/custom_round_corner_shape"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/choobab2"
+                    android:padding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&quot;제육볶음 츄밥&quot;"
+                    android:textSize="40dp"
+                    android:padding="8dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/hoonwhitecatr"
+                    />
+
+
+            </LinearLayout>
+
+            // 양념갈비 츄밥
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/custom_round_corner_shape"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/choobab6"
+                    android:padding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&quot;양념갈비 츄밥&quot;"
+                    android:textSize="40dp"
+                    android:padding="8dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/hoonwhitecatr"
+                    />
+
+
+            </LinearLayout>
+
+            // 칠리수제 돈까스
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/custom_round_corner_shape"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/choobab7"
+                    android:padding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&quot;칠리수제 돈까스 츄밥&quot;"
+                    android:textSize="40dp"
+                    android:padding="8dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/hoonwhitecatr"
+                    />
+
+
+            </LinearLayout>
+
+            // 닭강정 츄밥
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/custom_round_corner_shape"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/choobab9"
+                    android:padding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&quot;닭강정 츄밥&quot;"
+                    android:textSize="40dp"
+                    android:padding="8dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/hoonwhitecatr"
+                    />
+
+
+            </LinearLayout>
+
+            // 닭갈비 츄밥
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/custom_round_corner_shape"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/choobab10"
+                    android:padding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&quot;닭갈비 츄밥&quot;"
+                    android:textSize="40dp"
+                    android:padding="8dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/hoonwhitecatr"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
